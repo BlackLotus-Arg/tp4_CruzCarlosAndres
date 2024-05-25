@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<link th:rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}"/>
+
+    <title>PV Spring Boot</title>
+</head>
+<body class="container">
+	<header class="d-flex justif-content-between align-items-start">
+		<img th:src="@{/images/inglogo.png}" width="150" alt="">
+		<div class="row">
+			<h1 class="col-12 m-0 px-4">Facultad de ingenieria</h1>
+			<h2 class="col-12 m-0 px-4 text-muted">Universidad Nacional de Jujuy</h2>
+		</div>
+		
+	</header>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-2">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	    <div class="navbar-nav">
+	      <a class="nav-item nav-link active" href="#">Inicio</a>
+	      <a class="nav-item nav-link" href="#about">Acerca de</a>
+	      <a class="nav-item nav-link" href="#carreras">Carreras</a>
+	      <a class="nav-item nav-link" href="#noticias">Noticias</a>
+	      <a class="nav-item nav-link" href="#contacto">Contacto</a>
+	    </div>
+	  </div>
+	</nav>
+	<main class="row mt-4">
+		<aside class="container col-3">
+			<h6>Facultades</h6>
+			<ul class="nav flex-column">
+			  <li class="nav-item">
+			    <a class="nav-link" href="http://www.fce.unju.edu.ar/">Facultade de Cs. Economicas</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="http://www.fca.unju.edu.ar/">Facultad de Cs. Agrarias</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="http://www.fhycs.unju.edu.ar/">Facultad de Humanidades y Cs. Sociales</a>
+			  </li>
+			</ul>
+			<h6>Otros</h6>
+			<ul class="nav flex-column">
+			  <li class="nav-item">
+			    <a class="nav-link" href="https://www.fi.unju.edu.ar/secretarias/sec-academica/calendario-academico.html">Calendario Academico</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="https://virtual.unju.edu.ar/local/bidi/access.php">CID Unju</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="http://virtual.unju.edu.ar/bibliotecas/">Bibliotecas Digitales</a>
+			  </li>
+			</ul>
+		</aside>
+		<section class="container col-9">
+			<section id="about">
+				<h2>Acerca de la Facultad</h2>
+				<p>
+					La Universidad nace el 25 de mayo de 1972 como universidad provincial y al año siguiente se transforma en Universidad Nacional. Comienza a funcionar sobre la base de cuatro carreras: Ingeniería Agronómica, Ingeniería de Minas, Ingeniería Metalúrgica e Ingeniería Química. Su propósito fue apuntalar las actividades de explotación e industrialización de los recursos naturales de Jujuy. Las tres últimas carreras mencionadas pasan a constituir la actual Facultad de Ingeniería que, con el transcurso de los años, sumó a ellas un número importante de otras carreras.
+				</p>
+				<p>
+					Las políticas de la Universidad Nacional de Jujuy, y especialmente de la Facultad de Ingeniería, tienden a ampliar el área de influencia y a fortalecer su acción institucional, en respuesta a la demanda social creciente de formación de recursos humanos que contribuyan al desarrollo científico, tecnológico y cultural.
+				</p>
+				<p>
+					En la actualidad, las particularidades geopolíticas del área de influencia de la Facultad le otorgan una importante proyección internacional; proyección nacida tanto por el impacto regional producido por la globalización y en particular por los acuerdos suscriptos por nuestro país en el marco del Mercosur, como por la habilitación de nuevos pasos fronterizos en la provincia los cuales la integran regionalmente mediante el corredor bioceánico. Esta realidad permite que Jujuy pase de ser una provincia muy alejada de los puertos argentinos a otra que está sobre la línea de unión entre los puertos comerciales del norte de Chile con los de Brasil. Por ende, de disponer como única salida comercial el puerto de Buenos Aires a 1700 km, ahora está a tan sólo 700 km del de Antofagasta (Chile). Todo ello constituye a la vez una oportunidad y un desafío para la economía regional, y en consecuencia para la Facultad.
+				</p>
+				
+			</section>
+			<section id="carreras">
+				<h2>Carreras</h2>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item"><h4>CARRERAS DE GRADO</h4></li>
+					<li class="list-group-item"> - INGENIERÍA QUÍMICA</li>
+					<li class="list-group-item"> - INGENIERÍA INDUSTRIAL</li>
+					<li class="list-group-item"> - INGENIERÍA DE MINAS</li>
+					<li class="list-group-item"> - INGENIERÍA INFORMÁTICA</li>
+					<li class="list-group-item"> - LICENCIATURA EN TECNOLOGÍA DE LOS ALIMENTOS</li>
+					<li class="list-group-item"> - LICENCIATURA EN CIENCIAS GEOLÓGICAS</li>	
+				</ul>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item"><h4>CARRERAS DE PREGRADO</h4></li>
+					<li class="list-group-item"> - ANALISTA PROGRAMADOR UNIVERSITARIOCA</li>
+					<li class="list-group-item"> - TECNICATURA UNIVERSITARIA EN DISEÑO INTEGRAL DE VIDEOJUEGOS</li>
+					<li class="list-group-item"> - TECNICATURA UNIVERSITARIA EN PERFORACIONES</li>
+				</ul>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item"><h4>Convenio UNT</h4></li>
+					<li class="list-group-item"> - Lic. en Biotecnología, Lic. en Química, Bióquímica y Farmacia</li>
+				</ul>
+			</section>
+			<section id="noticias">
+				<h2>Noticias</h2>
+				<div class="row">
+					<div class="col-6">
+						<div class="card text-center" style="width: 18rem;">
+						  <img class="card-img-top" src="https://noticias.unju.edu.ar/noticias/serv/notis/4563WhatsApp%20Image%202024-05-23%20at%2011.36.58.jpeg">
+						  <div class="card-body">
+						    <h5 class="card-title">LA UNJU Y EL MUNICIPIO DE PALPALÁ LANZARON EL PROGRAMA CIUDADANÍA DIGITAL UNJU. CONECTANDO OPORTUNIDADES</h5>
+						    <p class="card-text">En el marco de las acciones que en conjunto vienen desarrollando la Universidad Nacional de Jujuy y la Municipalidad de Palpalá, se presentó una nueva iniciativa destinada a personas mayores de 16 años con el objetivo de brindar acceso a herramientas digitales.</p>
+						    <a href="https://noticias.unju.edu.ar/noticia.php?id=4378" alt="Card image cap" class="btn btn-primary">Ver</a> 
+						  </div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="card text-center" style="width: 18rem;">
+						  <img class="card-img-top" src="https://noticias.unju.edu.ar/noticias/serv/notis/4558REUNI%C3%93N%20DE%20(42).jpg">
+						  <div class="card-body">
+						    <h5 class="card-title">DEL 21 AL 25 DE OCTUBRE ARGENTINA SERÁ SEDE EL 8° SIMPOSIO INTERNACIONAL DE BIOFUMIGACIÓN, ABONOS VERDES, Y CULTIVOS DE COBERTURA</h5>
+						    <p class="card-text">Esta iniciativa, que se desarrolla bajo el lema “Plantas al servicio de la salud, del suelo y los cultivos”, es un espacio de actualización acerca de las tendencias mundiales en estas técnicas, que, a través del uso de plantas y sus subproductos permiten mejorar la sanidad y calidad del suelo y los cultivos.</p>
+						    <a href="https://noticias.unju.edu.ar/noticia.php?id=4373" alt="Card image cap" class="btn btn-primary">Ver</a> 
+						  </div>
+						</div>						
+					</div>
+					
+					<div class="col-6">
+						<div class="card text-center" style="width: 18rem;">
+						  <img class="card-img-top" src="https://noticias.unju.edu.ar/noticias/serv/notis/4562IMG-20240523-WA0015.jpg">
+						  <div class="card-body">
+						    <h5 class="card-title">INVITAN A PARTICIPAR DEL CICLO DE TALLERES "SAN ANTONIO GASTRONÓMICO"</h5>
+						    <p class="card-text">El equipo de trabajo del Proyecto de Extensión "Fortalecimiento del Sector Turístico de Zona Valles" de la FHyCS junto a la Dirección de Turismo de la localidad de San Antonio, dictarán el ciclo de talleres "San Antonio Gastronómico" destinado a emprendedores gastronómicos de la zona</p>
+						    <a href="https://noticias.unju.edu.ar/noticia.php?id=4377" alt="Card image cap" class="btn btn-primary">Ver</a> 
+						  </div>
+						</div>						
+					</div>
+					
+					<div class="col-6">
+						<div class="card text-center" style="width: 18rem;">
+						  <img class="card-img-top" src="https://noticias.unju.edu.ar/noticias/serv/notis/4561Flyer%20Jornadas%20CYT%20SECTER%2024_.jpg">
+						  <div class="card-body">
+						    <h5 class="card-title">ENTRE EL 6 Y EL 7 DE JUNIO SE REALIZARÁ LA I JORNADA DE CIENCIA Y TÉCNICA EN LA UNJU</h5>
+						    <p class="card-text">La propuesta, que se desarrollará en el predio del Rectorado, tiene como lema de presentación "Integrando y proyectando la Ciencia en Jujuy” y surge como iniciativa de la SeCTER para socializar y promover las actividades científico-técnicas entre la comunidad y los investigadores que las gestionan y ejecutan.</p>
+						    <a href="https://noticias.unju.edu.ar/noticia.php?id=4376" alt="Card image cap" class="btn btn-primary">Ver</a> 
+						  </div>
+						</div>						
+					</div>
+				</div>	
+			</section>
+		</section>
+	</main>
+	<footer id="contacto">
+		<div class="bg-primary row">
+			<div class="col-6">
+				<ul class="list-group list-group-flush bg-primary text-center">
+				  <li class="list-group-item active">Ítalo Palanca Nº 10 </li>
+				  <li class="list-group-item active">San Salvador de Jujuy, Jujuy - Argentina </li>
+				  <li class="list-group-item active">
+					<a href="info@fi.unju.edu.ar" style="color: white;">email</a>
+				  </li>
+				</ul>
+			</div>
+			<div class="col-6">
+				<ul class="list-group list-group-flush bg-primary text-center">
+				  <li class="list-group-item active"><strong>Redes</strong></li>
+				  <li class="list-group-item active">
+					<a href="https://www.facebook.com/fiunju/" style="color: white;">Facebook</a>
+				  </li>
+				  <li class="list-group-item active">
+					<a href="https://www.youtube.com/channel/UCgS9XJlKKSYI1oJ4lIOo77A" style="color: white;">Youtube</a>
+				  </li>
+				  <li class="list-group-item active">
+					<a href="https://www.linkedin.com/school/facultad-de-ingenieria-unju" style="color: white;">LinkedIn</a>
+				  </li>
+				  <li class="list-group-item active">
+					<a href="https://www.instagram.com/fiunju/" style="color: white;">Instagram</a>
+				  </li>
+				</ul>				
+			</div>			
+			<div class="col-12 text-center">
+				<span class="text-muted">Copyright © 2014-2022 - Facultad de Ingeniería - UNJu</span>
+			</div>
+		</div>
+	</footer>
+	
+</div>
+	
+   <script th:src="@{/webjars/bootstrap/5.3.3/js/bootstrap.min.js}"></script>
+</body>
+</html>
